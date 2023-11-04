@@ -10,7 +10,6 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-<<<<<<< HEAD
 public class ProductDto 
 {
 	
@@ -24,16 +23,4 @@ public class ProductDto
     @NotEmpty(message = "Product Image Should Not Be Empty")
     private byte[] productImage;
 
-=======
-public class ProductDto {
-    private Long id;
-    @NotEmpty(message = "Product Name Should Not Be Empty")
-    private String productName;
-    @NotEmpty(message = "Product Description Should Not Be Empty")
-    private String productDescription;
-    @NotEmpty(message = "Product Price Should Not Be Empty")
-    private Long productPrice;
-    @NotEmpty(message = "Product Image Should Not Be Empty")
-    private byte[] productImage;
->>>>>>> branch 'master' of https://github.com/ZakiID18/mini-project.git
 }

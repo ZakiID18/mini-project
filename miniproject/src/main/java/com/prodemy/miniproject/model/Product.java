@@ -11,9 +11,9 @@ import lombok.Setter;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-<<<<<<< HEAD
 @Table(name = "products")
-public class Product {
+public class Product 
+{
 	
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -32,24 +32,4 @@ public class Product {
     @Column(name = "image", length = 1000, nullable = false)
     private byte[] image;
     
-=======
-@Table(name = "product")
-public class Product {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
-
-    @Column(nullable = false)
-    private String name;
-
-    @Column(nullable = false)
-    private String description;
-
-    @Column(nullable = false)
-    private Long price;
-
-    @Lob
-    @Column(name = "image", length = 1000, nullable = false)
-    private byte[] image;
->>>>>>> branch 'master' of https://github.com/ZakiID18/mini-project.git
 }

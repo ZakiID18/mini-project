@@ -1,6 +1,5 @@
 package com.prodemy.miniproject.repository;
 
-<<<<<<< HEAD
 import java.util.List;
 
 import org.springframework.data.jpa.repository.JpaRepository;
@@ -30,12 +29,4 @@ public interface UserRepository extends JpaRepository<User, Long> {
 //	// Order all names (desc)
 //	Streamable<User> findAllByOrderByNameDesc();
 	
-	
-=======
-import com.prodemy.miniproject.model.User;
-import org.springframework.data.jpa.repository.JpaRepository;
->>>>>>> branch 'master' of https://github.com/ZakiID18/mini-project.git
-
-public interface UserRepository extends JpaRepository<User, Long> {
-    User findByEmail(String email);
 }
