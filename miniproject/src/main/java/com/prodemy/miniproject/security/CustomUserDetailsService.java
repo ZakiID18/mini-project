@@ -1,5 +1,27 @@
 package com.prodemy.miniproject.security;
 
+<<<<<<< HEAD
+import com.prodemy.miniproject.model.Role;
+import com.prodemy.miniproject.model.User;
+import com.prodemy.miniproject.repository.ProductRepository;
+import com.prodemy.miniproject.repository.UserRepository;
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.core.userdetails.UserDetailsService;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
+import org.springframework.stereotype.Service;
+=======
+>>>>>>> branch 'master' of https://github.com/ZakiID18/mini-project.git
+
+<<<<<<< HEAD
+import java.util.Collection;
+import java.util.stream.Collectors;
+
+@Service
+public class CustomUserDetailsService implements UserDetailsService {
+	
+=======
 import com.prodemy.miniproject.model.Role;
 import com.prodemy.miniproject.model.User;
 import com.prodemy.miniproject.repository.ProductRepository;
@@ -16,7 +38,7 @@ import java.util.stream.Collectors;
 
 @Service
 public class CustomUserDetailsService implements UserDetailsService {
-	
+>>>>>>> branch 'master' of https://github.com/ZakiID18/mini-project.git
     private UserRepository userRepository;
 
     public CustomUserDetailsService(UserRepository userRepository){

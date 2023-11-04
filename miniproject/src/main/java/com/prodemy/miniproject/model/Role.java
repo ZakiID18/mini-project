@@ -16,6 +16,7 @@ import java.util.List;
 @Table(name="roles")
 public class Role
 {
+<<<<<<< HEAD
 	
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -27,4 +28,15 @@ public class Role
     @ManyToMany(mappedBy="roles")
     private List<User> users;
     
+=======
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
+    @Column(nullable=false, unique=true)
+    private String name;
+
+    @ManyToMany(mappedBy="roles")
+    private List<User> users;
+>>>>>>> branch 'master' of https://github.com/ZakiID18/mini-project.git
 }

@@ -16,10 +16,19 @@ public class ProductController {
         this.productService = productService;
     }
 
+<<<<<<< HEAD
 //    @GetMapping("/products")
 //    public String listProduct(Model model){
 //        List<ProductDto> product = productService.findAllProducts();
 //        model.addAttribute("products", product);
 //        return "products";
 //    }
+=======
+    @GetMapping("/products")
+    public String listProduct(Model model){
+        List<ProductDto> product = productService.findAllProduct();
+        model.addAttribute("products",product);
+        return "products";
+    }
+>>>>>>> branch 'master' of https://github.com/ZakiID18/mini-project.git
 }
